@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="./assets/styles/css.css" rel="stylesheet">
+    <link href="./assets/styles/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./assets/images/logo.svg" alt="Drywall fcp logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="carrosel">
+        <div class="galleryContainer" id="carrouselTransition">
+            <div class="slideShowContainer">
+                <div id="playPause" onclick="playPauseSlides()"></div>
+                <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+                <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+                <div class="captionTextHolder">
+                    <p class="captionText slideTextFromTop"></p>
+                </div>
+                <div class="imageHolder">
+                    <img src="assets/images/led-diferente.jpg">
+                    <p class="captionText">Caption Text-02</p>
+                </div>
+                <div class="imageHolder">
+                    <img src="/assets/images/sala-led-abaju.jpg">1366X768
+                    <p class="captionText">Caption Text-01</p>
+                </div>
+                <div class="imageHolder">
+                    <img src="assets/images/led-amarelo.jpg">
+                    <p class="captionText">Caption Text-03</p>
+                </div>
+                <div class="imageHolder">
+                    <img src="./assets/images/sala-led-teto.jpg">
+                    <p class="captionText">Caption Text-04</p>
+                </div>
+                <div class="imageHolder">
+                    <img src="./assets/images/sala-led.jpg">
+                    <p class="captionText">Caption Text-04</p>
+                </div>
+                <div class="imageHolder">
+                    <img src="./assets/images/sala-escada.jpg">
+                    <p class="captionText">Caption Text-04</p>
+                </div>
+                <div class="imageHolder">
+                    <img src="./assets/images/sala.jpeg">
+                    <p class="captionText">Caption Text-04</p>
+                </div>
+                <div class="imageHolder">
+                    <img src="./assets/images/parede-antes.jpg">
+                    <p class="captionText">Caption Text-04</p>
+                </div>
+                <div class="imageHolder">
+                    <img src="./assets/images/parede-depois.jpg">
+                    <p class="captionText">Caption Text-04</p>
+                </div>
+            </div>
+            <div id="dotsContainer"></div>
+        </div>
+    </section>
+
+    <section id="main">
+        <a name="servicos"></a>
+        <main class="main-container">
+            <div class="main-container-title">
+                <h1>Serviços</h1>
+                <p>Tudo que você imaginar o drywall pode realizar</p>
+            </div>
+            <section id="main-container-grid">
+                <div class="main-container-box broca">
+                    <div class="main-image">
+                        <img src="./assets/images/broca.svg" alt="Broca">
+                    </div>
+                    <div class="main-container-description">
+                        <h2>Drywall</h2>
+                        <p>É de grande vantagem utilizar gesso em reparos ou reformas em sua residência, pois além de
+                            econômico, ele melhora a estética e valoriza o ambiente. Para se ter uma ideia, o drywall é
+                            a principal forma de se construir na Europa e EUA há décadas</p>
+                    </div>
+                </div>
+
+                <div class="main-container-box caixaDeFerramenta">
+                    <div class="main-image">
+                        <img src="./assets/images/caixa-de-ferramenta.svg" alt="Caixa de ferramentas">
+                    </div>
+                    <div class="main-container-description">
+                        <h2>Forros</h2>
+                        <p>Feitos em gesso acartonado (DRYWALL) ou em placas de gesso, para rebaixamento do forro, dando
+                            um requinte ao mesmo, e praticidade na manutenção elétrica e hidráulica além de ser
+                            termoacústico</p>
+                    </div>
+                </div>
+
+                <div class="main-container-box martelo">
+                    <div class="main-image">
+                        <img src="./assets/images/martelo.svg" alt="martelo">
+                    </div>
+                    <div class="main-container-description">
+                        <h2>Gesso</h2>
+                        <p>Trabalhamos com gesso de placas para forros rebaixados e aplicação de gesso liso nas paredes
+                            e forros</p>
+                    </div>
+                </div>
+
+                <div class="main-container-box ferramentas">
+                    <div class="main-image">
+                        <img src="./assets/images/ferramentas.svg" alt="ferramentas">
+                    </div>
+                    <div class="main-container-description">
+                        <h2>Divisória de Drywall</h2>
+                        <p>Prático para montagens, o produto entra no sistema de obra limpa, um conceito cada vez mais
+                            utilizado no ramo por dispensar massas, pinturas, tijolos e outros materiais que geram
+                            sujeira e resíduos de construção</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </section>
+
+    <section id="about">
+        <a name="sobre"></a>
+        <div id="about-container">
+            <div class="title">
+                <h2>Sobre</h2>
+            </div>
+
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="./assets/images/minha-foto.png" alt="Minha foto">
+                </div>
+
+                <div class="about-descricao">
+                    <p>Aqui vai um texto descrevendo o que faz quem é você uma descrição de emprego é uma declaração
+                        escrita que enumera as principais tarefas, responsabilidades e qualificações obrigatórias
+                        necessárias para desempenhar o cargo ou a posição do cargo.</p>
+                    <a href="">saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="orcamento">
+        <a name="contato"></a>
+        <div class="orcamento-content">
+            <div class="orcamento-descricao">
+                <h2>ENTRE EM CONTATO E FAÇA UM ORÇAMENTO</h2>
+            </div>
+
+            <div class="orcamento-icons">
+                <div class="icons-container">
+                    <a href="" class="whatsapp"> <img src="./assets/images/btn-whatsapp.svg" alt="whatsapp"> </a>
+                    <a href="" class="email"> <img src="./assets/images/btn-email.svg" alt="email"> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <a name="sobre"></a>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div>
+                    <img src="./assets/images/logo.svg" alt="Logo">
+                </div>
+                <div class="footer-descricao">
+                    <p>Todos os direitos reservados desde 20xx</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/scripts/carrousel.js"></script>
+</body>
+
+</html>
